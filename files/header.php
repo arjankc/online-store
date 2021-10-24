@@ -1,3 +1,7 @@
+	<?php
+	include("files/connect.php");
+	?>
+
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
