@@ -34,25 +34,33 @@
             <div class="col-sm-6"> 
 
             <form role="form">
+              <h1>Add Product</h1>
               <div class="box-body">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  <label for="name">Product name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter product name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="price">Price</label>
+                  <input type="text" class="form-control" id="price" placeholder="Enter amount">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">Example block-level help text here.</p>
+                  <label for="picture">File input</label>
+                  <input type="file" id="picture">
                 </div>
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Check me out
-                  </label>
+                <div class="form-group">
+                  <label for="description">Product description</label>
+                  <textarea id="description" class="form-control" rows="5" placeholder="Enter description">
+                  </textarea>
                 </div>
+                <div class="form-group">
+                  <label for="category">Category</label>
+                  <select id="category">
+                    <option>Shirts</option>
+                    <option>Pants</option>
+                  </select>
+                </div>
+
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
