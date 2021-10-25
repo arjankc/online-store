@@ -33,12 +33,12 @@
             </div>
             <div class="col-sm-6"> 
 
-            <form role="form">
+            <form role="form" action="cathandler.php" method="POST">
               <h1> Categories </h1>
               <div class="box-body">
                 <div class="form-group">
                   <label for="category">Categories</label>
-                  <input type="text" class="form-control" id="category" placeholder="Enter category name">
+                  <input type="text" class="form-control" id="category" placeholder="Enter category name" name="name">
                 </div>
               </div>
               <!-- /.box-body -->
