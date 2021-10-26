@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include('adminfiles/head.php');
 
 if(isset($_POST['login'])){
@@ -10,6 +12,9 @@ if(isset($_POST['login'])){
   $sql="SELECT * from admins Where username='$email' AND password='$password'";
   $results=$connect->query($sql);
   $final=$results->fetch_assoc();
+
+  $_SESSION['email']=$final['username'];
+  $_SESSION['password']=$final['password'];
 
   if($email=$final['username'] AND $password=$final['password']){
     header('location: adminindex.php');

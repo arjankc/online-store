@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <?php
-    include('adminfiles/head.php')
+    include('adminfiles/session.php');
+    include('adminfiles/head.php');
     ?>
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
