@@ -38,24 +38,24 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="name">Product name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter product name">
+                  <input type="text" class="form-control" id="name" placeholder="Enter product name" name="name">
                 </div>
                 <div class="form-group">
                   <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" placeholder="Enter amount">
+                  <input type="text" class="form-control" id="price" placeholder="Enter amount" name="price">
                 </div>
                 <div class="form-group">
                   <label for="picture">File input</label>
-                  <input type="file" id="picture">
+                  <input type="file" id="picture" name="picture">
                 </div>
                 <div class="form-group">
                   <label for="description">Product description</label>
-                  <textarea id="description" class="form-control" rows="5" placeholder="Enter description">
+                  <textarea id="description" class="form-control" rows="5" placeholder="Enter description" name="description">
                   </textarea>
                 </div>
                 <div class="form-group">
                   <label for="category">Category</label>
-                  <select id="category">
+                  <select id="category" name="category">
                     <option>Shirts</option>
                     <option>Pants</option>
                   </select>
