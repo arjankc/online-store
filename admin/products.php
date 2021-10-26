@@ -33,7 +33,7 @@
             </div>
             <div class="col-sm-6"> 
 
-            <form role="form">
+            <form role="form" action="producthandler.php" method="post" enctype="multipart/form-data">
               <h1>Add Product</h1>
               <div class="box-body">
                 <div class="form-group">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                   <label for="picture">File input</label>
-                  <input type="file" id="picture" name="picture">
+                  <input type="file" id="picture" name="file">
                 </div>
                 <div class="form-group">
                   <label for="description">Product description</label>
