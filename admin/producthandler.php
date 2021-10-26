@@ -19,3 +19,5 @@ $sql="INSERT INTO products(name,price,picture,description,category_id) VALUES('$
 $connect->query($sql);
 
 ?>
+
+test
