@@ -29,7 +29,23 @@
         <!-- Main content -->
         <section class="content">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-9">
+
+              <?php
+
+              include ('../files/connect.php');
+
+              $sql="SELECT * from products";
+              $results=$connect->query($sql);
+              while($final=$results->fetch_assoc()){ ?>
+
+                <h3> <?php echo $final['id'] ?> </h3>
+
+              <?php }
+
+              ?>
+
+
               
             </div>
             
