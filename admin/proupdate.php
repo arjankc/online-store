@@ -39,8 +39,6 @@
 
                 $newid=$_GET['up_id'];
 
-                echo $newid;
-
                 include('../files/connect.php');
 
                 $sql="SELECT * from products WHERE id='$newid'";
@@ -51,15 +49,15 @@
 
               ?>
 
-              <h1>Add Product</h1>
+              <h1>Update Product</h1>
               <div class="box-body">
                 <div class="form-group">
                   <label for="name">Product name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter product name" name="name">
+                  <input type="text" class="form-control" id="name" placeholder="Enter product name"  value="<?php echo $final['name']?>" name="name">
                 </div>
                 <div class="form-group">
                   <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" placeholder="Enter amount" name="price">
+                  <input type="text" class="form-control" id="price" placeholder="Enter amount" value="<?php echo $final['price']?>" name="price">
                 </div>
                 <div class="form-group">
                   <label for="picture">File input</label>
@@ -67,12 +65,12 @@
                 </div>
                 <div class="form-group">
                   <label for="description">Product description</label>
-                  <textarea id="description" class="form-control" rows="5" placeholder="Enter description" name="description">
+                  <textarea id="description" class="form-control" rows="5" placeholder="Enter description" value="<?php echo $final['description']?>" name="description">
                   </textarea>
                 </div>
                 <div class="form-group">
                   <label for="category">Category</label>
-                  <select id="category" name="category">
+                  <select id="category" value="<?php echo $final['category']?>" name="category">
                     <?php
                     $cat="SELECT * from categories";
                     $results=mysqli_query($connect,$cat);
