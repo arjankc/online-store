@@ -38,8 +38,9 @@
               $sql="SELECT * from products";
               $results=$connect->query($sql);
               while($final=$results->fetch_assoc()){ ?>
-
-                <h3> <?php echo $final['id'] ?> </h3>
+                <a href="proshow.php?pro_id=<?php echo $final['id']?>">
+                <h3> <?php echo $final['id'] ?> : <?php echo $final['name'] ?> </h3><hr><br>
+                </a>        
 
               <?php }
 
