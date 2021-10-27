@@ -29,8 +29,11 @@
         <!-- Main content -->
         <section class="content">
           <div class="row">
+            
             <div class="col-sm-9">
-
+              <a href="products.php">
+              <button style="color:green;">Add new</button>
+            </a>
               <?php
 
               include ('../files/connect.php');

@@ -22,6 +22,8 @@ $sql="UPDATE products set name='$newname', price='$newprice', description='$newd
 
 if(mysqli_query($connect,$sql)) {
 	header('location: productsshow.php');
+} else {
+	header('location: adminindex.php');
 }
 
 }
