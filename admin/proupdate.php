@@ -34,7 +34,7 @@
             </div>
             <div class="col-sm-6"> 
 
-            <form role="form" action="producthandler.php" method="post" enctype="multipart/form-data">
+            <form role="form" action="proupdatehandler.php" method="post" enctype="multipart/form-data">
               <?php
 
                 $newid=$_GET['up_id'];
@@ -84,7 +84,8 @@
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="hidden" value="<?php echo $final['id']?>" name="form_id">
+                <button type="submit" class="btn btn-primary" name="update">Update</button>
               </div>
             </form>
           </div>
