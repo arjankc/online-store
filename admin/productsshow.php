@@ -44,8 +44,11 @@
 
                 <a href="proupdate.php?up_id=<?php echo $final['id'] ?>">
                   <button>Update</button>
-                </a>        
-                <hr>
+                </a>    
+
+                <a href="prodelete.php?del_id=<?php echo $final['id'] ?>">
+                  <button style="color:red">Delete</button>
+                </a> <hr>
 
               <?php }
 
