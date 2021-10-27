@@ -35,9 +35,18 @@
 
               include ('../files/connect.php');
 
-              
+              $id=$_GET['pro_id'];
+              $sql="SELECT * from products WHERE id='$id'";
+              $results=$connect->query($sql);
 
+              $final=$results->fetch_assoc();
               ?>
+
+              <h3> Name: <?php echo $final ['name']?></h3><hr><br>
+              
+              <h3> Price: <?php echo $final ['price']?></h3><hr><br>
+
+              <h3> Description: <?php echo $final ['description']?></h3><hr><br>
 
 
               
