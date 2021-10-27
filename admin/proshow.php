@@ -48,6 +48,8 @@
 
               <h3> Description: <?php echo $final ['description']?></h3><hr><br>
 
+              <img src="<?php echo $final['picture']?>" alt="No file" style="height:300px; width:300px">
+
 
               
             </div>
