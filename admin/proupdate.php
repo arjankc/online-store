@@ -35,11 +35,22 @@
             <div class="col-sm-6"> 
 
             <form role="form" action="producthandler.php" method="post" enctype="multipart/form-data">
-              
+              <?php
 
+                $newid=$_GET['up_id'];
 
+                echo $newid;
 
-              
+                include('../files/connect.php');
+
+                $sql="SELECT * from products WHERE id='$newid'";
+
+                $results=$connect->query($sql);
+
+                $final=$results->fetch_assoc();
+
+              ?>
+
               <h1>Add Product</h1>
               <div class="box-body">
                 <div class="form-group">
