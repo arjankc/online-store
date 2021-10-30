@@ -8,7 +8,7 @@
 <?php
 	include ("files/header.php");
 	?>	
-	
+	<br>
 	<!-- Product -->
 	<div class="bg0 m-t-23 p-b-140">
 		<div class="container">
@@ -255,6 +255,15 @@
 			</div>
 
 			<div class="row isotope-grid">
+				<?php
+
+				include("files/connect.php");
+				$sql="select * from products";
+				$results=$connect->query($sql);
+
+				while($final=$results->fetch_assoc()) {
+
+				?>
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 					<!-- Block2 -->
 					<div class="block2">
@@ -286,7 +295,7 @@
 						</div>
 					</div>
 				</div>
-
+<?php } ?>
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 					<!-- Block2 -->
 					<div class="block2">
