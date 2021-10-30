@@ -263,6 +263,16 @@
 			</div>
 
 			<div class="row isotope-grid">
+				<?php
+					include("files/connect.php");
+					$sql="Select * from products";
+
+					$results=$connect->query($sql);
+
+					while($final=$results->fetch_assoc()) 
+					{
+
+				?>
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 					<!-- Block2 -->
 					<div class="block2">
@@ -294,7 +304,7 @@
 						</div>
 					</div>
 				</div>
-
+<?php } ?>
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 					<!-- Block2 -->
 					<div class="block2">
