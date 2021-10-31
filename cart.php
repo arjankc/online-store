@@ -54,7 +54,7 @@
 										<div class="">
 											<form action="cartremove.php" method="POST">
 											<button class="btn btn-sm btn-outline-danger" name="remove">Remove</button>
-											<input type="hidden" name="item_name" value="<?php $value['itme_name'] ?>">
+											<input type="hidden" name="item_name" value="<?php $value['item_name'] ?>">
 											</form>
 										</div>
 									</td>
