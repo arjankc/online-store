@@ -95,7 +95,7 @@
 										</div>
 									</div>
 
-									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04" name="addtocart" onclick="location.href='carthandler.php?cart_id=<?php echo $final['id'] ?>">
 										Add to cart
 									</button>
 								</div>
