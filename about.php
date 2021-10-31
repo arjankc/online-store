@@ -24,19 +24,24 @@
 				<div class="col-md-7 col-lg-8">
 					<div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
 						<h3 class="mtext-111 cl2 p-b-16">
-							Our Story
+							Nepali Traditional Dress
+
 						</h3>
 
 						<p class="stext-113 cl6 p-b-26">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor massa ultrices non. Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas varius egestas diam, eu sodales metus scelerisque congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas gravida justo eu arcu egestas convallis. Nullam eu erat bibendum, tempus ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt vitae nec augue. Suspendisse potenti. Proin ut est diam. Donec condimentum euismod tortor, eget facilisis diam faucibus et. Morbi a tempor elit.
+							
 						</p>
 
 						<p class="stext-113 cl6 p-b-26">
-							Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula. 
+							<p> Traditional dresses are symbolic of the art and culture of any country. They trace the timeline of the evolution of fashion dating ages back to modern times. These dresses also many times reveal the essence of nationalism of its country. So like all other countries, there are plenty of traditional dresses in Nepal that the beautiful nation boasts of. </p>
+
+							<p> Nepal is home to more than 100 different ethnic groups. They speak their own language, have unique culture, traditions and also have their own traditional costumes. It means Nepali ethnic wear is much more than just daura suruwal, Dhaka topi and gunyun cholo. </p>
+
+<p> If you are eager to know about those traditional costumes of Nepal, here we bring the dresses of some of the ethnic communities of Nepal reflecting a great part of their culture</p>
 						</p>
 
 						<p class="stext-113 cl6 p-b-26">
-							Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+							Experience the best quality traditional attires of Nepal.
 						</p>
 					</div>
 				</div>
@@ -54,20 +59,20 @@
 				<div class="order-md-2 col-md-7 col-lg-8 p-b-30">
 					<div class="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
 						<h3 class="mtext-111 cl2 p-b-16">
-							Our Mission
+							CULTURAL DRESSES OF NEPAL
 						</h3>
 
 						<p class="stext-113 cl6 p-b-26">
-							Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum rhoncus dignissim risus, sed consectetur erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam maximus mauris sit amet odio convallis, in pharetra magna gravida. Praesent sed nunc fermentum mi molestie tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas, luctus arcu non, laoreet mauris. Sed in ipsum tempor, consequat odio in, porttitor ante. Ut mauris ligula, volutpat in sodales in, porta non odio. Pellentesque tempor urna vitae mi vestibulum, nec venenatis nulla lobortis. Proin at gravida ante. Mauris auctor purus at lacus maximus euismod. Pellentesque vulputate massa ut nisl hendrerit, eget elementum libero iaculis.
+							Nepal is a country rich in cultural diversity. The people in Nepal wear different colorful dresses as per their culture, religion, tradition, festival, and occasions. Generally, a man wears Daura Suruwal with Dhaka Topi and women wear dhoti cholo or sari. There are various cultural dresses which are worn by the different caste of people. The cultural dresses help people to show their culture, tradition, religion. These dresses also help to reveal the essence of nationalism in its country. 
 						</p>
 
 						<div class="bor16 p-l-29 p-b-9 m-t-22">
 							<p class="stext-114 cl6 p-r-40 p-b-11">
-								Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while.
+								Nepal is a diverse country with a wide range of cultural settlements. The Nepalese people remain deeply rooted in ancient old traditions and customs. You can find various Nepalese traditional dresses based on caste and ethnicity. However, Daura Suruwal and Gunyu Cholo are the national dress of Nepal and get worn by Nepalese of all sections, class, and ethnicity. 
 							</p>
 
 							<span class="stext-111 cl8">
-								- Steve Job’s 
+								We can help you get the best deals in traditional wear. 
 							</span>
 						</div>
 					</div>

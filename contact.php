@@ -53,7 +53,7 @@
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+								Galaxy business complex, Raniban, Pokhara
 							</p>
 						</div>
 					</div>
@@ -65,11 +65,11 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Lets Talk
+								Call us
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								+1 800 1236879
+								+977-054-404543
 							</p>
 						</div>
 					</div>
@@ -81,11 +81,11 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Sale Support
+								Sales Support
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								contact@example.com
+								admin@gmail.com
 							</p>
 						</div>
 					</div>
@@ -96,11 +96,8 @@
 	
 	
 	<!-- Map -->
-	<div class="map">
-		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
-	</div>
-
-
+		<iframe width=100% height=100% style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ44wF2egZ6zkRlGWVfmQBn18&key=AIzaSyCMHZ170cR79ONoqJqN7OPsgBuw_qDEyrk"></iframe>
+	
 
 <?php
 	include ("files/footer.php");
