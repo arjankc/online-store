@@ -45,7 +45,7 @@
 								if (isset($_SESSION['cart'])) {
 									$total=0;
 									foreach($_SESSION['cart'] as $key => $value) {
-										
+										$total=$total+$value['item_price']*$value['quantity'];
 
 								?>
 
@@ -116,7 +116,7 @@
 								</span>
 							</div>
 						</div>
-						
+
 						<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
 							Proceed to Checkout
 						</button>
