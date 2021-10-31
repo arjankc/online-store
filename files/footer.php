@@ -64,8 +64,6 @@
 
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					
-
-					
 				</div>
 			</div>
 
