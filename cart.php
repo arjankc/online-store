@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+	session_start();
 	include ("files/head.php");
 ?>
 <body class="animsition">
@@ -39,6 +40,12 @@
 									<th class="column-4">Quantity</th>
 									<th class="column-5">Total</th>
 								</tr>
+								<?php
+
+								if (isset($_SESSION['cart'])) {
+									foreach($_SESSION['cart'] as $key => $value) {
+
+								?>
 
 								<tr class="table_row">
 									<td class="column-1">
@@ -63,7 +70,10 @@
 									</td>
 									<td class="column-5">$ 36.00</td>
 								</tr>
-
+								<?php 
+									}
+								}
+								?>
 								<tr class="table_row">
 									<td class="column-1">
 										<div class="how-itemcart1">
