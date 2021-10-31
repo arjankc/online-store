@@ -2955,7 +2955,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .how-itemcart1 {
-  width: 60px;
+  /* width: 60px; */
   position: relative;
   margin-right: 20px;
   cursor: pointer;
