@@ -53,7 +53,7 @@
 											<img src="images/item-cart-04.jpg" alt="IMG">
 										</div>
 									</td>
-									<td class="column-2">Fresh Strawberries</td>
+									<td class="column-2"><?php echo $value['item_name'] ?></td>
 									<td class="column-3">$ 36.00</td>
 									<td class="column-4">
 										<div class="wrap-num-product flex-w m-l-auto m-r-0">
