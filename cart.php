@@ -26,7 +26,7 @@
 		
 
 	<!-- Shoping Cart -->
-	<form class="bg0 p-t-75 p-b-85">
+	<div class="bg0 p-t-75 p-b-85">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
@@ -51,8 +51,10 @@
 
 								<tr class="table_row">
 									<td class="column-1">
-										<div class="how-itemcart1">
+										<div class="">
+											<form action="cartremove.php" method="POST">
 											<button class="btn btn-sm btn-outline-danger">Remove</button>
+											</form>
 										</div>
 									</td>
 									<td class="column-2"><?php echo $value['item_name'] ?></td>
@@ -177,7 +179,7 @@
 				</div>
 			</div>
 		</div>
-	</form>
+	</div>
 		
 	
 		
