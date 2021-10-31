@@ -67,7 +67,7 @@
 												<i class="fs-16 zmdi zmdi-minus"></i>
 											</div>
 
-											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="<?php echo $value['quantity'] ?>">
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="quantity" value="<?php echo $value['quantity'] ?>">
 
 											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
 												<i class="fs-16 zmdi zmdi-plus"></i>
@@ -92,10 +92,7 @@
 							<div class="flex-w flex-m m-r-20 m-tb-5">
 								
 							</div>
-
-							<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
-								Update Cart
-							</div>
+							
 						</div>
 					</div>
 				</div>

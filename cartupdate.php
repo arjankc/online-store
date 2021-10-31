@@ -1,12 +1,14 @@
 <?php
 session_start();
-if (isset($_POST['remove'])) {
+$qty=$_POST['quantity'];
+
+if (isset($_POST['update'])) {
 	foreach($_SESSION['cart'] as $key => $value) {
 		if ($value['item_name']==$_POST['item_name']) {
-			unset($_SESSION['cart'][$key]);
+			$_SESSION['cart'][$key]['quantity']=$qty;
 			$_SESSION['cart']==array_values($_SESSION['cart']);
 			echo "<script>
-				alert('item removed');
+				alert('item updated');
 				window.location.href='cart.php';
 				</script>
 			";
