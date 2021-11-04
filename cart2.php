@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 	session_start();
+	include ("handler/customersession.php");
 	include ("files/head.php");
 ?>
 <body class="animsition">
@@ -122,9 +123,7 @@
 								</p>
 								
 								<div class="p-t-15">
-									
-
-									
+																	
 									<form action="handler/orderhandler.php" method="POST">
 									<div class="bor8 bg0 m-b-12">
 										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="address">
@@ -147,8 +146,8 @@
 							</div>
 						</div>
 
-						<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
-							Proceed to Checkout
+						<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer" name="order">
+							Place order
 						</button>
 					</div>
 				</div>
