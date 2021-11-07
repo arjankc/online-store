@@ -17,7 +17,9 @@ if(isset($_POST['login'])){
   if($email=$final['username'] AND $password=$final['password']){
     header('location: ../cart.php');
   } else {
-    
+    echo"<script> alert('wrong credentials');
+    window.location.href='../customerforms.php';
+    </script>";
   }
   
 }
