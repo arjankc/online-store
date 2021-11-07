@@ -34,4 +34,5 @@ if($payment=="paypal") {
 	window.location.href='../index.php';
 	</script>";
 	}
+	unset($_SESSION['cart']);
 ?>

@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    session_start();
+?>
 
 <head>
     <!-- Add meta tags for mobile and IE -->
@@ -25,7 +28,7 @@
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: '88.44'
+                            value: <? echo $_SESSION['total'] ?>
                         }
                     }]
                 });
