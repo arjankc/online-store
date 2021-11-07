@@ -24,4 +24,8 @@ foreach ($_SESSION['cart'] as $key => $value) {
 	$sql3="INSERT INTO order_details(order_id,product_id,quantity) VALUES('$orderid','$proid','$quantity')";
 	$connect->query($sql3);
 }
+
+echo "<script> alert ('order has been placed');
+window.location.href='../index.php';
+</script>";
 ?>
