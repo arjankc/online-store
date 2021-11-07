@@ -14,6 +14,8 @@ if(isset($_POST['login'])){
   $_SESSION['email']=$final['username'];
   $_SESSION['password']=$final['password'];
 
+  $_SESSION['customerid']=$final['id'];
+
   if($email=$final['username'] AND $password=$final['password']){
     header('location: ../cart.php');
   } else {
