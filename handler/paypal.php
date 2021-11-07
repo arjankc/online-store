@@ -14,7 +14,7 @@
     <div id="paypal-button-container"></div>
 
     <!-- Include the PayPal JavaScript SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AReBflM2smIrnuGtsYidPkB67Kz_oJSZ-DiCMsTOtnTLPOLWa5AisP11uKuH5tWL2Nv0kYTPxi5OCiuF&currency=USD"></script>
 
     <script>
         // Render the PayPal button into #paypal-button-container
