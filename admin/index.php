@@ -35,12 +35,19 @@
                 </a>
                 <hr>
               </div>
-              <div class="col-sm-9">
+            <div class="col-sm-9">
             <a href="categories.php">
                 <button style="color: green;">Add categories</button>
                 </a>
                 <hr>
+            </div>
+            <div class="col-sm-9">
+            <a href="orders.php">
+                <button style="color: green;">View Orders</button>
+                </a>
+                <hr>
               </div>
+          </div>
           </div>
         </section>
         <!-- /.content -->
