@@ -64,10 +64,7 @@
 
           <h3> quantity : <?php echo $final['quantity']?> </h3><hr><br>
           
-
-
-
-        </div>
+          </div>
             
         <div class="col-sm-3">
         </div>

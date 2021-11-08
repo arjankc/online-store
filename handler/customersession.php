@@ -5,7 +5,4 @@ if (empty($_SESSION['email'] AND $_SESSION['password'])) {
 		</script>";
 }
 
-
-
-
 ?>
