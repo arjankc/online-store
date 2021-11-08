@@ -6,4 +6,7 @@ $msg=$_POST['msg'];
 $sql="INSERT INTO contact(email,msg) VALUES('$email','$msg')";
 $connect->query($sql);
 
+echo"<script> alert('message sent!');
+    </script>";
+header('location: ../contact.php');
 ?>

@@ -28,7 +28,7 @@
    <div class="wrap-menu-desktop">
       <nav class="limiter-menu-desktop container">
          <!-- Logo desktop -->		
-         <a href="#" class="logo">
+         <a href="index.php" class="logo">
          <img src="images/icons/logo-01.png" alt="IMG-LOGO">
          </a>
          <!-- Menu desktop -->
