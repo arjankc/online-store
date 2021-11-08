@@ -31,14 +31,11 @@
           <div class="row">
             
             <div class="col-sm-9">
-              <a href="products.php">
-              <button style="color:green;">Add new</button>
-            </a>
               <?php
 
               include ('../files/connect.php');
 
-              $sql="SELECT * from products";
+              $sql="SELECT * from orders";
               $results=$connect->query($sql);
               while($final=$results->fetch_assoc()){ ?>
                 <a href="proshow.php?pro_id=<?php echo $final['id']?>">
