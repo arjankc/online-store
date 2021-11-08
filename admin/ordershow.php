@@ -49,6 +49,25 @@
               <h3> Address: <?php echo $final ['address']?></h3><hr><br>
               
             </div>
+
+          <div class="col-sm-9">
+
+          <?php
+          
+          $sql2="SELECT * from order_details WHERE id='$id'";
+          $results=$connect->query($sql2);
+
+          $final=$results->fetch_assoc();        
+          ?>
+
+          <h3> Product No : <?php echo $final['product_id']?> </h3><hr><br>
+
+          <h3> quantity : <?php echo $final['quantity']?> </h3><hr><br>
+          
+
+
+
+        </div>
             
         <div class="col-sm-3">
         </div>
