@@ -38,15 +38,11 @@
               $sql="SELECT * from orders";
               $results=$connect->query($sql);
               while($final=$results->fetch_assoc()){ ?>
-                <a href="proshow.php?pro_id=<?php echo $final['id']?>">
-                <h3> <?php echo $final['id'] ?> : <?php echo $final['name'] ?> </h3><br>
+                <a href="ordershow.php?pro_id=<?php echo $final['id']?>">
+                <h3> <?php echo $final['id'] ?> : <?php echo $final['phone'] ?> <br> Total: <?php echo $final['total'] ?></h3><br>
                 </a>
 
-                <a href="proupdate.php?up_id=<?php echo $final['id'] ?>">
-                  <button>Update</button>
-                </a>    
-
-                <a href="prodelete.php?del_id=<?php echo $final['id'] ?>">
+                <a href="orderdelete.php?del_id=<?php echo $final['id'] ?>">
                   <button style="color:red">Delete</button>
                 </a> <hr>
 
