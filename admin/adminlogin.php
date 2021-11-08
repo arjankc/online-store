@@ -17,7 +17,7 @@ if(isset($_POST['login'])){
   $_SESSION['password']=$final['password'];
 
   if($email=$final['username'] AND $password=$final['password']){
-    header('location: adminindex.php');
+    header('location: index.php');
   } else {
     header('location: adminlogin.php');
   }
