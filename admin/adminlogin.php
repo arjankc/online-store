@@ -29,7 +29,7 @@ if(isset($_POST['login'])){
 	<div class="col-sm-4">
 
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-4" style="padding-top: 150px;">
 	<div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Admin Login</h3>
