@@ -27,8 +27,9 @@
             createOrder: function(data, actions) {
                 return actions.order.create({
                     purchase_units: [{
-                        amount: {
-                            value: <? echo $_SESSION['total'] ?>
+                        amount: {value:<?php 
+                            $total_usd=$_SESSION['total']/120;
+                            echo ceil($total_usd);?>
                         }
                     }]
                 });

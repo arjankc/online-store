@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);
 include('../files/connect.php');
 
 $total=$_POST['total'];
