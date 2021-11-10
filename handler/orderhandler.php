@@ -30,6 +30,10 @@ foreach ($_SESSION['cart'] as $key => $value) {
 if($payment=="paypal") {
 	$_SESSION['total']=$total;
 	header('location:paypal.php');
+} elseif($payment=="eSewa") {
+	$_SESSION['total']=$total;
+	$_SESSION['orderid']=$orderid;
+	header('location:esewa.php');
 } else {
 	echo "<script> alert ('order has been placed');
 	window.location.href='../index.php';
