@@ -76,8 +76,8 @@
 							</span>
 						</div>
 					</div>
-				</div>
 
+				</div>
 				<div class="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
 					<div class="how-bor2">
 						<div class="hov-img0">
@@ -86,7 +86,12 @@
 					</div>
 				</div>
 			</div>
+			<p class="stext-113 cl6 p-b-26">
+				<strong>DISCLAIMER!</strong>
+							This project is a student project entirely for learning purposes. Please do not order anything off of here. This project is not a legitimate business. I do not own the legal rights nor copyright to any images used in the project. If you have an objection and would like me to remove anything, please let me know; I shall remove them promptly. I want to apologize for any inconvenience sincerely this might have caused.
+						</p>
 		</div>
+
 	</section>	
 	
 <?php
