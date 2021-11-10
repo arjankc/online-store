@@ -116,6 +116,7 @@
                                        <!-- add values -->
                                        <option value="cash">Cash on delivery</option>
                                        <option value="paypal">Paypal</option>
+                                       <option value="eSewa">eSewa</option>
                                     </select>
                                     <div class="dropDownSelect2"></div>
                                  </div>
