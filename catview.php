@@ -23,7 +23,8 @@
 				<?php
 
 				include("files/connect.php");
-				$sql="select * from products";
+				$id=$_GET['cat_id'];
+				$sql="select * from products where category_id='$id'";
 				$results=$connect->query($sql);
 
 				while($final=$results->fetch_assoc()) {

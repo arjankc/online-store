@@ -9,25 +9,25 @@
 
 					<ul>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="catview.php?cat_id=1" class="stext-107 cl7 hov-cl1 trans-04">
 								Women
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="catview.php?cat_id=2" class="stext-107 cl7 hov-cl1 trans-04">
 								Men
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="catview.php?cat_id=3" class="stext-107 cl7 hov-cl1 trans-04">
 								Kids
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="catview.php?cat_id=4" class="stext-107 cl7 hov-cl1 trans-04">
 								Acessories
 							</a>
 						</li>
