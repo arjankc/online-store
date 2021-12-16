@@ -46,7 +46,7 @@
                                  </div>
                               </td>
                               <td class="column-2"><?php echo $value['item_name'] ?>;</td>
-                              <td class="column-3">$ <?php echo $value['item_price'] ?></td>
+                              <td class="column-3">Rs <?php echo $value['item_price'] ?></td>
                               <td class="column-4">
                                  <form action="cartupdate.php" method="POST">
                                     <div class="wrap-num-product flex-w m-l-auto m-r-0">
