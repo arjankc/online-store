@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-	session_start();
 	include ("files/head.php");
 ?>
 <body class="animsition">
