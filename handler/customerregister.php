@@ -21,10 +21,4 @@ if ((password_verify($password, $password2_hash)) && (password_verify($password2
 	</script>";
 }
 
-
-
-
-
-
-
 ?>
