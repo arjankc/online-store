@@ -106,10 +106,10 @@
                            <div class="p-t-15">
                               <form action="handler/orderhandler.php" method="POST">
                                  <div class="bor8 bg0 m-b-12">
-                                    <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="address">
+                                    <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="address" required>
                                  </div>
                                  <div class="bor8 bg0 m-b-22">
-                                    <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="phone" placeholder="Phone number">
+                                    <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="phone" placeholder="Phone number" required>
                                  </div>
                                  <div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
                                     <select class="js-select2" name="payment">
