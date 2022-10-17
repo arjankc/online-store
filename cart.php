@@ -7,24 +7,19 @@
 	
 <?php
 	include ("files/header.php");
-	?>	
+?>	
 		
-	<?php
+<?php
 	if (!isset($total)) {
-		$total=0;
+	$total=0;
 	}
-	?>
-	<!-- Shoping Cart -->
+?>
+<!-- Shoping Cart -->
 	
-								<?php
-
-								if (isset($_SESSION['cart'])) {
-									$total=0;
-									foreach($_SESSION['cart'] as $key => $value) {
-										$total=$total+$value['item_price']*$value['quantity'];
-
-								?>
-<div class="bg0 p-t-75 p-b-85">
+<?php
+if (isset($_SESSION['cart'])) {
+$total=0;
+echo '<div class="bg0 p-t-75 p-b-85">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
@@ -37,7 +32,12 @@
 									<th class="column-3">Price</th>
 									<th class="column-4">Quantity</th>
 									<th class="column-5"></th>
-								</tr>
+								</tr>';
+foreach($_SESSION['cart'] as $key => $value) {
+$total=$total+$value['item_price']*$value['quantity'];
+?>
+
+
 								<tr class="table_row">
 									<td class="column-1">
 										<div class="">
