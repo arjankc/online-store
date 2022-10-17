@@ -4,4 +4,5 @@ session_destroy();
 echo"<script> alert('Payment sucessful');
     window.location.href='../index.php';
     </script>";
+    unset($_SESSION['cart']);
 ?>
