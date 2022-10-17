@@ -10,13 +10,21 @@
 	?>	
 		
 	<?php
-
-								if (!isset($total)) {
-									$total=0;
-								}
-								?>
+	if (!isset($total)) {
+		$total=0;
+	}
+	?>
 	<!-- Shoping Cart -->
-	<div class="bg0 p-t-75 p-b-85">
+	
+								<?php
+
+								if (isset($_SESSION['cart'])) {
+									$total=0;
+									foreach($_SESSION['cart'] as $key => $value) {
+										$total=$total+$value['item_price']*$value['quantity'];
+
+								?>
+<div class="bg0 p-t-75 p-b-85">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
@@ -30,15 +38,6 @@
 									<th class="column-4">Quantity</th>
 									<th class="column-5"></th>
 								</tr>
-								<?php
-
-								if (isset($_SESSION['cart'])) {
-									$total=0;
-									foreach($_SESSION['cart'] as $key => $value) {
-										$total=$total+$value['item_price']*$value['quantity'];
-
-								?>
-
 								<tr class="table_row">
 									<td class="column-1">
 										<div class="">
@@ -72,6 +71,19 @@
 								</tr>
 								<?php 
 									}
+								} else {
+									echo '<div class="bg0 p-t-75 p-b-85">
+									<div class="container">
+									<div class="row">
+									<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+									<div class="m-l-25 m-r--38 m-lr-0-xl">
+									<h1> Cart is empty</h1>
+									</div>
+									</div>
+									</div>
+									</div>';
+									
+
 								}
 								?>
 								
@@ -107,7 +119,9 @@
 							</div>
 						</div>
 
-						<button onclick="location.href='cart2.php'" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+						<button onclick="location.href='cart2.php'" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer"
+						<?php if (!isset($_SESSION['cart'])) { echo'disabled';} ?>
+						>
 							Proceed to Checkout
 						</button>
 					</div>
