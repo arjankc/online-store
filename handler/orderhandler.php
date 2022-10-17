@@ -33,11 +33,11 @@ if($payment=="paypal") {
 } elseif($payment=="eSewa") {
 	$_SESSION['total']=$total;
 	$_SESSION['orderid']=$orderid;
-	header('location:esewa.php');
+	header('location:../esewa.php');
 } else {
 	echo "<script> alert ('order has been placed');
 	window.location.href='../index.php';
 	</script>";
-	}
 	unset($_SESSION['cart']);
+	}
 ?>
