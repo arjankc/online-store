@@ -62,12 +62,13 @@ include('adminfiles/head.php');
                 </div>
                 <div class="form-group">
                   <label for="category">Category</label>
-                  <select id="category" name="category" value="<?php echo $final['category'] ?>">
+                  <select id="category" name="category">
                     <?php
                     $cat="SELECT * from categories";
                     $results=mysqli_query($connect,$cat);
                     while($row=mysqli_fetch_assoc($results)){
-                    echo "<option value=".$row['id'].">".$row['name']."</option>";
+                    $selected = ($row['id'] == $final['category_id']) ? ' selected' : '';
+                    echo "<option value=\"".$row['id']."\"".$selected.">".$row['name']."</option>";
                   }
                     ?>
                   </select>

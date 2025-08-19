@@ -3,69 +3,59 @@ session_start();
 
 include('adminfiles/head.php');
 
-if(isset($_POST['login'])){
+if (isset($_POST['login'])) {
+    include('../files/connect.php');
 
-  include('../files/connect.php');
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-  $email=$_POST['email'];
-  $password=$_POST['password'];
-  $sql="SELECT * from admins Where username='$email' AND password='$password'";
-  $results=$connect->query($sql);
-  $final=$results->fetch_assoc();
+    // Run query to check login
+    $stmt = $connect->prepare("SELECT * FROM admin WHERE email=? AND password=?");
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-  $_SESSION['email']=$final['username'];
-  $_SESSION['password']=$final['password'];
+    if ($result->num_rows > 0) {
+        $final = $result->fetch_assoc();
 
-  if($email=$final['username'] AND $password=$final['password']){
-    header('location: index.php');
-  } else {
-    header('location: adminlogin.php');
-  }
-  
+        $_SESSION['email'] = $final['email'];
+        $_SESSION['password'] = $final['password'];
+
+        header('Location: index.php');
+        exit;
+    } else {
+        echo "<p style='color:red; text-align:center;'>❌ Wrong Email or Password</p>";
+    }
 }
-
 ?>
+
 <div class="row">
-	<div class="col-sm-4">
-
-	</div>
-	<div class="col-sm-4" style="padding-top: 150px;">
-	<div class="box box-info">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="padding-top: 150px;">
+        <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Admin Login</h3>
+                <h3 class="box-title">Admin Login</h3>
             </div>
-            <!-- /.box-header -->
-            <!-- form start -->
             <form class="form-horizontal" action="adminlogin.php" method="POST">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
-                  </div>
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
-                  </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-info pull-right" name="login">Log in</button>
                 </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <button type="submit" class="btn btn-info pull-right" name="login">Log in</button>
-              </div>
-              <!-- /.box-footer -->
             </form>
-	</div>
-	<div class="col-sm-4">
-
-	</div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
 </div>
