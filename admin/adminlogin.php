@@ -20,6 +20,7 @@ if (isset($_POST['login'])) {
 
         $_SESSION['email'] = $final['email'];
         $_SESSION['password'] = $final['password'];
+        $_SESSION['admin_authenticated'] = true;
 
         header('Location: index.php');
         exit;
